@@ -1,0 +1,413 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+header {
+  background-color: #eac926;
+  padding: 0 15px;
+}
+
+header div.logo {
+  width: 50%;
+}
+
+header div.logo {
+  padding: 10px;
+}
+
+.navbar {
+  font-size: 12px;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+header .form .submit {
+  background-color: #fff;
+  border: none;
+  color: #666;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.precio-descuento{
+  display: flex;
+}
+
+.price {
+  font-size: 16px;
+  width: 30%;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+
+.home-main{
+  padding-bottom: 50px;
+}
+.item-article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+.item-article img {
+  width: 100%;
+}
+
+.item-article i,
+.discount {
+  color: #39b54a;
+}
+
+.main-article .discount{
+  width: 70%;
+}
+
+.item-article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 0.7s ease;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+  background-color: white;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-logo-buscador{
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  padding: 20px;
+  transition: 0.7s;
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+.item-article{
+  position: relative;
+  transition: 1s;
+}
+
+.item-article:hover .fa-truck{
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in;
+}
+
+.item-article:hover .description{
+  opacity: 1;
+  box-shadow: 0px 11px 10px rgb(100 100 100);
+  transition: 0.5s;
+}
+
+/* FORM */
+.form-register, .form-login{
+  padding: 50px 0 ;
+}
+
+.form-login{
+  height: calc(100vh - 330px);
+}
+
+.label-title{
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+
+.input-group, .input-option{
+  display: flex;
+}
+
+.input-group{
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.input-option{
+  align-items: center;
+}
+
+.label-option{
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.buttons-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-action{
+  padding: 10px 15px;
+  background-color: #0044aa;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  width: 49%;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.button-action.clear{
+  background-color: transparent;
+  border: 3px solid #0044aa;
+  color: #0044aa;
+}
+
+.button-action:hover{
+  background-color: #0022AA;
+  transition: 0.5s;
+}
+
+.form-login .button-action{
+  width: 100%;
+}
+input{
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+}
+
+input:focus-visible{
+  border-bottom: 1px solid #0044aa;
+  outline: none;
+}
+
+
+/* /FORM */
+/* FOOTER */
+
+footer{
+  background-color: #FFFFFF;
+  padding: 40px 15px 10px 15px;
+}
+
+.footerItem{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.footerItem p{
+  max-width: 269px;
+}
+
+.footerItem i{
+  color: #1259c3;;
+  font-size: 2em;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in;
+}
+
+.footerItem i:hover {
+  color: #0044aa;
+  transition: color 0.4s ease-in-out;
+}
+
+.footerTitle{
+  font-size: 16px;
+}
+
+.footerCopyright{
+  font-size: 12px;
+  color: #666;
+}
+/* /FOOTER */
+
+@media (min-width: 361px) {
+  .item-article .description {
+    display: block;
+  }
+
+  .item-article:hover {
+    transition: 1s ease;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media (min-width: 612px) {
+  .item-article {
+    width: 100%;
+    max-width: 45%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .products{
+    justify-content: space-between;
+  }
+  div.burger-menu{
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .navbar ul{
+    display: flex;
+  }
+
+  .navbar ul li{
+    margin: 0 5px;
+  }
+
+  header div.logo {
+    width: 100%;
+  }
+  .logo img{
+    width: 100%;
+    max-width: 200px;
+  }
+  .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  header div.top-header p {
+    width: fit-content;
+    margin: 0;
+}
+}
+
+@media (min-width: 869px) {
+  .item-article {
+    max-width: 22%;
+  }
+  .price {
+    width: fit-content;
+  }
+  .main-article .discount{
+    width: 100%;
+    margin-left: 5px;
+  }
+  .footer-items-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price {
+    font-size: 18px;
+  }
+  
+}
